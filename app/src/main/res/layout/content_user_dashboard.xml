@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".UserDashboard">
+    tools:showIn="@layout/activity_user_dashboard"
+<!--    >-->
+
+    <TextView
+        android:id="@+id/contact_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:text="Dash Board"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/add_button"
+        android:gravity="center"
+        android:typeface="serif" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="242dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/add_button">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="Life Regained"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/life_regained"
+            android:textColor="@color/colorWhite"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="0 Day(s)"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/days"
+            android:textColor="@color/colorWhite"
+
+            android:layout_below="@+id/life_regained"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="242dp"
+        android:layout_height="78dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/add_button">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="Money Saved"
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/money_saved"
+            android:textColor="@color/colorWhite"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:text="0 Kr."
+            android:paddingTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="50dp"
+            android:layout_gravity="center"
+            android:id="@+id/money"
+            android:textColor="@color/colorWhite"
+            android:layout_below="@+id/money_saved"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="242dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:background="@drawable/add_button">-->
+    <RelativeLayout
+        android:layout_width="242dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center">
+    <Button
+        android:layout_width="242dp"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/stats_icon"
+        android:drawablePadding="10dp"
+        android:text="See sttatistics"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/add_smoking"
+        android:id="@+id/statistics"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableBottom="@drawable/add_icon"
+        android:drawablePadding="10dp"
+        android:text="Add Smoking Event"
+        android:paddingTop="10dp"
+        android:paddingLeft="50dp"
+        android:paddingBottom="10dp"
+        android:paddingRight="50dp"
+        android:id="@+id/add_smoking"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/add_button"
+        android:textColor="@color/colorWhite"
+        />
+    </RelativeLayout>
+
+
+
+</LinearLayout>
+
+
+</LinearLayout>
